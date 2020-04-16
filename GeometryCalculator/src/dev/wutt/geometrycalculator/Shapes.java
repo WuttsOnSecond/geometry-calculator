@@ -1,6 +1,8 @@
+package dev.wutt.geometrycalculator;
 import java.util.Scanner;
 
-public class shapes {
+// Static class implementation
+public class Shapes {
 	
 	public static void square(Scanner sc) {
 		System.out.println("Enter a side of the square: ");

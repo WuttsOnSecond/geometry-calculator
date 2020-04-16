@@ -1,17 +1,44 @@
+package dev.wutt.geometrycalculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
 * This is a simple area calculator that returns  
-* the surface area of selected shapes
+* the surface area of selected shapes 
 *
 * @author  Nicholas
 */
 
-public class areaCalculator {
+public class Main {
 	
 	public static void main(String[] args) {
+		//staticShapes();
 		
+		Square square = new Square(4);
+		System.out.println(square);
+		
+		System.out.println();
+		Rectangle rectangle = new Rectangle(5, 4);
+		System.out.println(rectangle);
+		
+		System.out.println();
+		Circle circle = new Circle(7);
+		System.out.println(circle);
+		
+		System.out.println();
+		Trapezoid trapezoid = new Trapezoid(4, 3, 4);
+		System.out.println(trapezoid);
+		
+		System.out.println();
+		Rhombus rhombus = new Rhombus(5, 4);
+		System.out.println(rhombus);
+		
+		System.out.println();
+		Rhombus rhombusAlt = new Rhombus(6, 7);
+		System.out.println(rhombusAlt);
+	}
+	
+	static void staticShapes() {
 		int shapeNum;
 		String newLine = System.lineSeparator();
 		Scanner keyboard = new Scanner(System.in);
@@ -34,27 +61,27 @@ public class areaCalculator {
 				
 				switch (shapeNum) {
 					case 1: 
-						shapes.square(keyboard);
+						Shapes.square(keyboard);
 						break;
 						
 					case 2:
-						shapes.rectangle(keyboard);
+						Shapes.rectangle(keyboard);
 						break;
 						
 					case 3:
-						shapes.triangle(keyboard);
+						Shapes.triangle(keyboard);
 						break;
 						
 					case 4: 
-						shapes.circle(keyboard);
+						Shapes.circle(keyboard);
 						break;
 						
 					case 5:
-						shapes.trapezoid(keyboard);
+						Shapes.trapezoid(keyboard);
 						break;
 						
 					case 6: 
-						shapes.rhombus(keyboard);
+						Shapes.rhombus(keyboard);
 						break;
 				}
 				
@@ -68,4 +95,5 @@ public class areaCalculator {
 		}
 		
 	}
+		
 }
