@@ -2,6 +2,7 @@
 This is a simple command-line app that computes areas of various shapes.
 
 Output Example:
+
 The area of the square with side length 4.0 is: 16.0
 
 The area of the rectangle with base 5.0 and height 4.0 is: 20.0
